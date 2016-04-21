@@ -1,0 +1,107 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U logger_ada%b		logger_ada.adb		3c011662 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U logger_ada%s		logger_ada.ads		a3570c65 EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20150518132148 a5838d5a ada.real_time%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-c.ads		20150518132148 5421119b interfaces.c%s
+D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D logger_ada.ads	20160411041454 52f590a4 logger_ada%s
+D logger_ada.adb	20160411041454 56997312 logger_ada%b
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-multip.ads		20150518132150 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20150518132150 2e5b26a9 system.os_interface%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150518132150 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150518132150 601f6b72 system.task_info%s
+D s-taspri.ads		20150518132150 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20150518132150 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150518132150 339749f0 system.tasking%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+D s-win32.ads		20150518132150 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 19e8 13|47r6 81r24 14|15r6 17r13 29r7 29r56 41r7 52r23 82r7
+X 4 a-reatim.ads
+39K13*Real_Time 146e18 13|47w10 81r28 14|52r27
+50O9*Time_Span<duration> 13|81r38 14|52r37
+X 7 a-textio.ads
+49K13*Text_IO 471e16 14|15w10 17r17 29r11 29r60 41r11 82r11
+52P9*File_Type 14|17r25
+53n32*Out_File{53E9} 14|29r68
+86U14*Create 14|29s19
+88e7 Mode{53E9} 14|29r50
+89a7 Name{string} 14|29r34
+98U14*Close 14|41s19
+259U14*Put_Line 14|82s19
+X 9 interfac.ads
+38K9*Interfaces 178e15 13|48r6 53r22
+X 10 i-c.ads
+18K20*C 230e17 13|48w17 53r33
+35I9*int<integer> 13|67r56 70r35 81r58 92r41 101r54 101r68 14|24r56 53r16
+. 65r41 78r28 79r16 87r19
+X 13 logger_ada.ads
+51K9*Logger_Ada 111l5 111e15 14|16b14 90l5 90t15
+53K12*C=53:33 67r54 70r33 81r56 92r39 101r52 101r66 14|24r54 53r14 65r39
+. 78r26 79r14 87r17
+59E9*Log_Device 59e72 60r8 67r35 14|24r35
+59n24*Log_Console{59E9} 60r24
+59n37*Log_Ethernet{59E9} 60r42
+59n51*Log_Disk{59E9} 60r61 14|26r17
+59n61*Log_Serial{59E9} 61r24
+67V13*Logger_Init{10|35I9} 67>26 14|24b13 31l8 31t19
+67e26 Dev{59E9} 14|24b26 26r10
+70i4*MAX_BYTES_TO_READ{10|35I9}
+79V13*Logger_Thread_Create{10|35I9} 81^8 14|51b13 59l8 59t28
+81p8 Period(4|50O9) 14|52b7
+92V13*Logger_Manual_Call{10|35I9} 14|65b13 70l8 70t26
+100V13*Logger_Direct_Call{10|35I9} 100>33 101>33 14|76b13 88l8 88t26
+100a33 Logger_Buffer{string} 14|77b7 83r10 83r24 83r47
+101i33 Nbytes{10|35I9} 14|78b7 83r75 84r14
+108U14*Logger_Close 14|38b14 45l8 45t20
+X 14 logger_ada.adb
+17p4 Output{7|52P9} 29m26 29r26 41m25 41r25 82r28
+18a4 Out_Name{string} 29r40
+X 25 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

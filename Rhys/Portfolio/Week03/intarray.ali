@@ -1,0 +1,57 @@
+V "GNAT Lib v2015"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U intarray%b		intarray.adb		a7038155 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D intarray.adb		20160318052014 6925fd25 intarray%b
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-imgint.ads		20150518132150 02dbe0c2 system.img_int%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 10|5r6 5r19 33r9
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|5w23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|5w10 33r13
+263U14*Put_Line 10|33s21
+X 10 intarray.adb
+7U11*IntArray 7b11 35l5 35t13
+9A14 Int_Array(integer)<character> 11r20 14r33
+11a9 IntArray{9A14} 33r34
+14V18 Max{integer} 14b18 14>22 29l13 29t16 33s30
+14a22 Items{9A14} 19r26 20r28 22r43
+16i9 MaxInt{integer} 20r39 22m33 27r24
+19e21 I{character} 20r34 22r49
+

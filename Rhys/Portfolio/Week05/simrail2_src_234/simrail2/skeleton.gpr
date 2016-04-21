@@ -1,0 +1,7 @@
+project Skeleton is
+
+   for Main use ("lab3.adb");
+   for Object_Dir use "Obj";
+
+end Skeleton;
+

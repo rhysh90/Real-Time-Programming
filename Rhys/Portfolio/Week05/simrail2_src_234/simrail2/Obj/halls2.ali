@@ -1,0 +1,69 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U halls2%b		halls2.adb		fcc9a4c0 NE OO PK
+W int32defs%s		int32defs.ads		int32defs.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W simrail2%s		simrail2.adb		simrail2.ali
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+U halls2%s		halls2.ads		ecf94573 EE NE OO PK
+W raildefs%s		raildefs.ads		raildefs.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D halls2.ads		20160411041454 5308d55d halls2%s
+D halls2.adb		20160411041454 49bac626 halls2%b
+D int32defs.ads		20160411041454 dfad4756 int32defs%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D raildefs.ads		20160411041454 bff1902e raildefs%s
+D simrail2.ads		20160411041454 6c13e450 simrail2%s
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D unchconv.ads		20150518132150 ca2f9e18 unchecked_conversion%s
+D unsigned_types.ads	20160411041454 ea348493 unsigned_types%s
+X 3 halls2.ads
+13K9*Halls2 68l5 68e11 4|7b14 64l5 64t11
+16U14*Initialize 4|31b14 34l8 34t18
+31U14*Install_Int_Handling 31>35 4|43b14 46l8 46t28
+31p35 Analyzer{7|82P9} 4|43b36 45r37
+44U14*Enable 4|22b14 25l8 25t14
+46U14*Disable 4|13b14 16l8 16t15
+61V13*State_Of{7|51E9} 61>23 4|52b13 62l8 62t16
+61i23 Sensor{7|46I12} 4|52b23 58r28 61r19
+X 4 halls2.adb
+54m7 Addr{14|5M9} 58m7 59r34
+55m7 Value{14|4M9} 59m7 60r44
+56a7 Reg{5|66A9} 60m7 61r14
+X 5 int32defs.ads
+20K9*Int32defs 4|5w32 53r37 5|84e14
+52a4*Sensor_Addr(14|5M9) 4|58r15
+66A9*Sensor_Register(7|51E9)<7|45I9> 4|56r13
+80V13*Unsigned_8_To_Sensor_Register[13|20]{66A9} 4|60s14
+X 6 interfac.ads
+62M9*Unsigned_8
+65M9*Unsigned_16
+X 7 raildefs.ads
+23K9*Raildefs 3|12w6 31r46 61r35 61r62 4|5w22 43r47 52r35 52r62 53r27 7|86e13
+45I9*Sensor_Idx<short_short_integer>
+46I12*Sensor_Id{45I9} 3|61r44 4|52r44
+51E9*Sensor_Bit 3|61r71 4|52r71 7|51e32
+82P9*Proc4_Access 3|31r55 4|43r56
+X 8 simrail2.ads
+32K9*Simrail2 4|6w6 45r7 59r16 8|95e13
+57U14*Install_Int_Handling 4|45s16
+88V13*Read_Reg{14|4M9} 4|59s25
+X 14 unsigned_types.ads
+3K9*Unsigned_Types 4|5w6 53r11 14|11e19
+4M9*Unsigned_8<6|62M9> 4|55r15
+5M9*Unsigned_16<6|65M9> 4|54r14
+

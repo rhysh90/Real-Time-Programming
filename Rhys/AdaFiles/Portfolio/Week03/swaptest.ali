@@ -1,0 +1,60 @@
+V "GNAT Lib v2015"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U swaptest%b		swaptest.adb		b0e646f5 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D swaptest.adb		20160318044120 7ec03a85 swaptest%b
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-conca2.ads		20150518132148 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-imgint.ads		20150518132150 02dbe0c2 system.img_int%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|3r6 3r19 4r6 4r19
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|3w23 4r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|3w10 4r10
+263U14*Put_Line 12|24s7 27s11 30s11 31s11 32s11 36s11 37s11 38s11
+X 8 a-tiinio.ads
+56U14*Get 12|25s7[3|18] 28s7[3|18]
+X 12 swaptest.adb
+6U11*SwapTest 6b11 42l5 42t13
+8U11 Swap 8b11 8=16 8=18 17l5 17t9 34s11
+8i16 A{integer} 13r17 14m9
+8i18 B{integer} 14r14 15m9
+10i1 Temp{integer} 13m9 15r14
+19i1 A{integer} 25m11 31r20 34m16 34r16 37r20
+20i1 B{integer} 28m11 32r20 34m19 34r19 38r20
+

@@ -1,0 +1,97 @@
+V "GNAT Lib v2015"
+M P W=b
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U dates%b		dates.adb		65dc61db NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D dates.adb		20160318032830 abfa1dab dates%b
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-conca4.ads		20150518132148 7e642b20 system.concat_4%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-imenne.ads		20150518132148 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20150518132150 02dbe0c2 system.img_int%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-valenu.ads		20150518132150 bb1a4295 system.val_enum%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 10|12r6 12r19 15r27 16r8
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|12w23 15r31
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|12w10 16r12
+169U14*Skip_Line 10|106s11 111s11
+249U14*Get_Line 10|110s11
+263U14*Put_Line 10|94s7 99s9 104s11 121s25 127s17
+X 8 a-tiinio.ads
+56U14*Get 10|100s16[3|18] 105s18[3|18]
+X 10 dates.adb
+13U11*Dates 13b11 129l5 129t10
+15K12 Int_Io=15:31 100r9 105r11
+18E9 Month_Type 18e83 24r16 28r30 38r25 79r39 113r32
+18n24 Jan{18E9} 28r47 42r25 77r39
+18n29 Feb{18E9} 50r25
+18n34 Mar{18E9} 42r31
+18n39 Apr{18E9} 46r25
+18n44 May{18E9} 42r37
+18n49 Jun{18E9} 46r31
+18n54 Jul{18E9} 42r43
+18n59 Aug{18E9} 42r49
+18n64 Sep{18E9} 46r37
+18n69 Oct{18E9} 42r55
+18n74 Nov{18E9} 46r43
+18n79 Dec{18E9} 28r54 42r61 75r30
+20I12 Day_Num_Type{integer} 25r21
+22R9 Date_Type 26e14 31r22 67r27 67r45 69r11 92r28
+24e8 Month{18E9} 72r32 75r22 77m30 79m30 79r57 83m22 83r33 94r56 113m23 115r51
+25i12 Day_No{20I12} 72r14 74m22 82m22 82r34 94r35 108m17 115r28
+28a4 Days_In(integer)
+31r4 Today{22R9} 108m11 113m17 115r22 115r45 117r46
+31r11 Next_Day{22R9} 117m25 119r31
+33i4 Temp{integer} 105m22 107r21 108r27 110m31 113r64
+34a4 TempMonth{string} 110m20 113r49
+36i4 Year_No{integer} 51r36 100m20
+38V13 DaysIn{integer} 38b13 38>21 64l8 64t14 72s23 115s38
+38e21 M{18E9} 41r22
+67V13 Tomorrow{22R9} 67b13 67>23 89l8 89t16 117s37
+67r23 D{22R9} 72r12 72r30 75r20 79r55 82r32 83r31
+69r4 Date{22R9} 74m17 77m25 79m25 82m17 83m17 87r16
+92U14 Print 92b14 92>21 95l8 95t13 119s25
+92r21 D{22R9} 94r33 94r54
+

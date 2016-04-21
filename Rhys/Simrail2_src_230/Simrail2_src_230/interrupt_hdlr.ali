@@ -1,0 +1,137 @@
+V "GNAT Lib v2012"
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnnnnnnvnnnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnvnnvnnnnnnnnnnnnnn
+
+U interrupt_hdlr%b	interrupt_hdlr.adb	498b0e50 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W halls2%s		halls2.adb		halls2.ali
+W int32defs%s		int32defs.ads		int32defs.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W slogger%s		slogger.adb		slogger.ali
+W swindows%s		swindows.adb		swindows.ali
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+U interrupt_hdlr%s	interrupt_hdlr.ads	ef4a55cc EE NE OO PK
+W swindows%s		swindows.adb		swindows.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-unccon.ads		20120510125800 f9eb8f06
+D halls2.ads		20080513134216 5308d55d
+D int32defs.ads		20080302130942 dfad4756
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D interrupt_hdlr.ads	20100316063830 493c907b
+D interrupt_hdlr.adb	20150309135556 e49c2c35
+D logger_ada.ads	20110210045512 52f590a4
+D raildefs.ads		20150225124136 57fdbce8
+D slogger.ads		20130124050158 857a547d
+D swindows.ads		20130208044444 a676c5b7
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20040426105652 ea348493
+X 1 ada.ads
+16K9*Ada 19e8 19|15r6 31r24
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|45] 19|15w10 31r28
+X 10 a-tiinio.ads
+75U14*Put 19|112s11[4|18] 129s14[4|18]
+X 12 halls2.ads
+13K9*Halls2 68e11 19|21w4 66r7
+31U14*Install_Int_Handling 19|66s14
+X 13 int32defs.ads
+20K9*Int32defs 84e14 19|20w4 85r11 154r11
+66A9*Sensor_Register(21|50E9)<21|44I9> 19|155r16
+80V13*Unsigned_8_To_Sensor_Register[50|20]{66A9} 19|155s35
+X 14 interfac.ads
+55M9*Unsigned_8
+X 18 interrupt_hdlr.ads
+12K9*Interrupt_Hdlr 18l5 18e19 19|25b14 169l5 169t19
+14U14*Init 14>19 19|58b14 62l8 62t12
+14p19 Win{23|19P9} 19|59b10 61r23
+16U14*Install 19|64b14 67l8 67t15
+X 19 interrupt_hdlr.adb
+27p4 W_Interrupts{23|19P9} 61m7 132r16 138r19 141r19 144r19
+29i4 W_Height{natural} 91r42
+31K12 Iio=31:28 112r7 129r10
+33A12 String8{string}<integer> 54r14 151r17 156r16
+37U14 Analyze 38>10 39>10 66r35 81b14 146l8 146t15
+38i10 Offset{21|44I9} 82b10 108r42 114r10
+39a10 Value{21|78A9} 83b10 108r51 115r43 116r43 117r43 118r43 120r43 121r43
+. 122r43 123r43 128r10 129r47
+44i4 Number{natural} 112r34 133m7 133r18
+45i4 Line_Number{natural} 91m10 91r26 92r13 132r43 138r51 141r48 144r47
+47e4 Fg{23|20E9} 94r16 95m16 97m16 132r68
+48a4 Sensor_Line{string} 112m15 112r15 115m10 116m10 117m10 118m10 120m10
+. 121m10 122m10 123m10 129m18 129r18 132r30
+51V13 To_String{33A12} 52>10 53>10 115s33 116s33 117s33 118s33 120s33 121s33
+. 122s33 123s33 148b13 165l8 165t17
+52m10 Val{51|4M9} 149b10 155r66
+53i10 LSB_Sensor{21|44I9} 150b10 161r47
+87U17 Increment_Line 87b17 100l11 100t25 134s7 139s10 142s10 145s10
+155a7 V{13|66A9} 159r13
+156a7 Result{33A12} 160m13 164r14
+158i11 I<short_short_integer> 159r15 160r28 161r43
+X 21 raildefs.ads
+22K9*Raildefs 19|19w4 22r5 38r26 39r25 53r23 82r26 83r26 150r23 159r20 21|85e13
+44I9*Sensor_Idx<short_short_integer> 19|38r35 53r32 82r35 150r32 158r16
+50n29*On{50E9} 19|159r29
+78A9*Four_Registers(51|4M9)<integer> 19|39r34 83r35
+X 22 slogger.ads
+51K9*Slogger 19|23w6 107r10 108r10 22|100e12
+53b4*On{boolean} 19|107r18
+87U14*Send_Event 19|108s18
+X 23 swindows.ads
+17K9*Swindows 18|10w6 14r28 19|16w6 16r21 27r19 47r9 47r27 59r23 23|90e13
+19P9*Window(88+9) 18|14r37 19|27r28 59r32
+20E9*Color 19|47r18 23|22e59
+22n45*Yellow{20E9} 19|95r22
+22n53*White{20E9} 19|47r36 94r21 97r22
+42U14*Put_Line 19|132s7 138s10 141s10 144s10
+45e7 Foreground{20E9} 19|132r56
+88+9*Window_Struct
+X 51 unsigned_types.ads
+3K9*Unsigned_Types 19|17w6 17r27 51|11e19
+4M9*Unsigned_8<14|55M9> 19|52r23 149r23
+

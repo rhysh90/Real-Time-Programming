@@ -1,0 +1,14 @@
+The current simrail (v1.9) does interrupt callbacks using its worker thread.  It 
+assumes there is at least one sporadic (which of course provides a thread) in 
+the interrupt event pipeline.  If there isnt then any delay you write freezes 
+simrail.  In a case I saw today, commands sent via io_ports to simrail were 
+queued up until the "delay 0.1" completed.  Therefore the pull/no_pull commands 
+were executed by simrail immediately after one another and the simulated turnout 
+went to Middle.
+
+On the hardware, dio_int4 provides an extra thread, so executing a delay does 
+not cause immediate problems.  However executing a delay in the interrupt thread 
+is bad design and as soon as you have a moving train with concurrent turnout 
+operations you will see failures, worse with two trains.   I am thinking about 
+adding another thread to simrail, but not this year, and since it would support 
+bad design maybe never.  
