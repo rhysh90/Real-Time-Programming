@@ -22,6 +22,7 @@ with Swindows;                                 use Swindows;
 with Unsigned_Types;                           use Unsigned_Types;  -- 1.8
 with Raildefs;                                 use Raildefs;
 with dac_driver;
+with block_driver;
 with Dio192defs, Int32defs, Halls2;
 with Interrupt_Hdlr;  -- 2.1
 with Slogger;  -- 2.2
@@ -100,23 +101,6 @@ procedure Lab3 is
       --      Unsigned(Tn_Drives(Ndx)) );
    end Pull;
 
-   procedure Set_Cab (B : in Raildefs.Block_Id; Cab : in Raildefs.Cab_Type) is
-      use Raildefs, Dio192defs;
-      Index  : Raildefs.Block_Idx := (B - 1) / 2; -- 0..11
-      Nibble : Raildefs.Block_Idx := B mod 2;   -- note asymmetry for big-end
-                                                -- first
-   begin
-      null;  -- you write
-   end Set_Cab;
-
-   procedure Set_Polarity
-     (B   : in Raildefs.Block_Id;
-      Pol : in Raildefs.Polarity_Type) is
-      use Raildefs, Dio192defs;
-   begin
-      null;  -- you write
-   end Set_Polarity;
-
    -- for Dialog_Loop: --
 
    Pos0 : constant := 48;  -- ASCII '0'
@@ -149,6 +133,46 @@ procedure Lab3 is
       Number := 0;  -- we used it
    end Dac_Command;
 
+   -------- b_Command ------------------------
+   -- User syntax:  nb{+-}m
+   -- where n and 'b' already read
+   -- supports m in 1..4, n 1..24
+   ----------------------------------------------
+   procedure b_command is
+      C          : Character;
+      Block      : Block_Id;
+      Polarity   : Polarity_Type;
+      Cab	 : Cab_Type;
+   begin
+      if Number in 1..24 then
+         Block := Block_Id(Number);
+         Get_Char (W_In, C);
+         if C = '+' then
+            Polarity := Normal_Pol;
+         elsif C = '-' then
+            Polarity := Reverse_Pol;
+         else
+            Number := 0;
+            Put_Line (W_In, "command ignored");
+            delay 1.0;
+            return;
+         end if;
+         Get_Char (W_In, C);
+         if C in '0'..'4' then
+            Cab := Cab_Type(Character'pos (C) - Pos0);
+            block_driver.Set_Cab(Block, Cab);
+            block_driver.Set_Polarity(Block, Polarity);
+         else
+            Put_Line (W_In, "command ignored");
+            delay 1.0;
+         end if;
+      else
+         Put_Line (W_In, "command ignored");
+         delay 1.0;
+      end if;
+      Number := 0;
+   end b_command;
+
    procedure Dialog_Loop is
       C : Character;
    begin
@@ -170,6 +194,9 @@ procedure Lab3 is
 
             when 'd' =>
                Dac_Command;
+
+            when 'b' =>
+               b_command;
 
             when others =>
                null;
