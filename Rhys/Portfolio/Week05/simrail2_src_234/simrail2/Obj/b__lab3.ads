@@ -35,7 +35,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#bb7aee36#;
+   u00001 : constant Version_32 := 16#937c9efe#;
    pragma Export (C, u00001, "lab3B");
    u00002 : constant Version_32 := 16#fbff4c67#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -253,12 +253,12 @@ package ada_main is
    pragma Export (C, u00108, "system__val_lluB");
    u00109 : constant Version_32 := 16#13647f88#;
    pragma Export (C, u00109, "system__val_lluS");
-   u00110 : constant Version_32 := 16#792d926a#;
-   pragma Export (C, u00110, "dac_driverB");
-   u00111 : constant Version_32 := 16#089a161a#;
-   pragma Export (C, u00111, "dac_driverS");
-   u00112 : constant Version_32 := 16#70d23530#;
-   pragma Export (C, u00112, "dda06defsS");
+   u00110 : constant Version_32 := 16#2d6bbb19#;
+   pragma Export (C, u00110, "block_driverB");
+   u00111 : constant Version_32 := 16#a23cd030#;
+   pragma Export (C, u00111, "block_driverS");
+   u00112 : constant Version_32 := 16#6126b02c#;
+   pragma Export (C, u00112, "dio192defsS");
    u00113 : constant Version_32 := 16#55c514bd#;
    pragma Export (C, u00113, "raildefsS");
    u00114 : constant Version_32 := 16#8a0726ac#;
@@ -267,8 +267,8 @@ package ada_main is
    pragma Export (C, u00115, "io_portsB");
    u00116 : constant Version_32 := 16#6e2ad8e5#;
    pragma Export (C, u00116, "io_portsS");
-   u00117 : constant Version_32 := 16#6126b02c#;
-   pragma Export (C, u00117, "dio192defsS");
+   u00117 : constant Version_32 := 16#70d23530#;
+   pragma Export (C, u00117, "dda06defsS");
    u00118 : constant Version_32 := 16#4047cdf3#;
    pragma Export (C, u00118, "int32defsS");
    u00119 : constant Version_32 := 16#711c1115#;
@@ -513,34 +513,38 @@ package ada_main is
    pragma Export (C, u00238, "logger_adaB");
    u00239 : constant Version_32 := 16#a3570c65#;
    pragma Export (C, u00239, "logger_adaS");
-   u00240 : constant Version_32 := 16#fcc9a4c0#;
-   pragma Export (C, u00240, "halls2B");
-   u00241 : constant Version_32 := 16#ecf94573#;
-   pragma Export (C, u00241, "halls2S");
-   u00242 : constant Version_32 := 16#166b9811#;
-   pragma Export (C, u00242, "interrupt_hdlrB");
-   u00243 : constant Version_32 := 16#ef4a55cc#;
-   pragma Export (C, u00243, "interrupt_hdlrS");
-   u00244 : constant Version_32 := 16#a906eaad#;
-   pragma Export (C, u00244, "swindowsB");
-   u00245 : constant Version_32 := 16#a676c5b7#;
-   pragma Export (C, u00245, "swindowsS");
-   u00246 : constant Version_32 := 16#b5b2aca1#;
-   pragma Export (C, u00246, "system__finalization_mastersB");
-   u00247 : constant Version_32 := 16#80d8a57a#;
-   pragma Export (C, u00247, "system__finalization_mastersS");
-   u00248 : constant Version_32 := 16#6d4d969a#;
-   pragma Export (C, u00248, "system__storage_poolsB");
-   u00249 : constant Version_32 := 16#01950bbe#;
-   pragma Export (C, u00249, "system__storage_poolsS");
-   u00250 : constant Version_32 := 16#e34550ca#;
-   pragma Export (C, u00250, "system__pool_globalB");
-   u00251 : constant Version_32 := 16#c88d2d16#;
-   pragma Export (C, u00251, "system__pool_globalS");
-   u00252 : constant Version_32 := 16#2bce1226#;
-   pragma Export (C, u00252, "system__memoryB");
-   u00253 : constant Version_32 := 16#adb3ea0e#;
-   pragma Export (C, u00253, "system__memoryS");
+   u00240 : constant Version_32 := 16#792d926a#;
+   pragma Export (C, u00240, "dac_driverB");
+   u00241 : constant Version_32 := 16#089a161a#;
+   pragma Export (C, u00241, "dac_driverS");
+   u00242 : constant Version_32 := 16#fcc9a4c0#;
+   pragma Export (C, u00242, "halls2B");
+   u00243 : constant Version_32 := 16#ecf94573#;
+   pragma Export (C, u00243, "halls2S");
+   u00244 : constant Version_32 := 16#166b9811#;
+   pragma Export (C, u00244, "interrupt_hdlrB");
+   u00245 : constant Version_32 := 16#ef4a55cc#;
+   pragma Export (C, u00245, "interrupt_hdlrS");
+   u00246 : constant Version_32 := 16#a906eaad#;
+   pragma Export (C, u00246, "swindowsB");
+   u00247 : constant Version_32 := 16#a676c5b7#;
+   pragma Export (C, u00247, "swindowsS");
+   u00248 : constant Version_32 := 16#b5b2aca1#;
+   pragma Export (C, u00248, "system__finalization_mastersB");
+   u00249 : constant Version_32 := 16#80d8a57a#;
+   pragma Export (C, u00249, "system__finalization_mastersS");
+   u00250 : constant Version_32 := 16#6d4d969a#;
+   pragma Export (C, u00250, "system__storage_poolsB");
+   u00251 : constant Version_32 := 16#01950bbe#;
+   pragma Export (C, u00251, "system__storage_poolsS");
+   u00252 : constant Version_32 := 16#e34550ca#;
+   pragma Export (C, u00252, "system__pool_globalB");
+   u00253 : constant Version_32 := 16#c88d2d16#;
+   pragma Export (C, u00253, "system__pool_globalS");
+   u00254 : constant Version_32 := 16#2bce1226#;
+   pragma Export (C, u00254, "system__memoryB");
+   u00255 : constant Version_32 := 16#adb3ea0e#;
+   pragma Export (C, u00255, "system__memoryS");
    --  BEGIN ELABORATION ORDER
    --  ada%s
    --  interfaces%s
@@ -780,6 +784,8 @@ package ada_main is
    --  dac_driver%s
    --  dac_driver%b
    --  dio192defs%s
+   --  block_driver%s
+   --  block_driver%b
    --  halls2%s
    --  int32defs%s
    --  simdefs2%s
